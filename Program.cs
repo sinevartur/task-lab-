@@ -1,4 +1,5 @@
-﻿using System.Diagnostics.CodeAnalysis;
+using System.Diagnostics.CodeAnalysis;
+using System.Net;
 
 namespace sinartc_
 {
@@ -35,14 +36,24 @@ namespace sinartc_
 
                 // task 6
                 int summ = 0;
+                n = 1
                 int a = int.Parse(Console.ReadLine());
                 for (int i = 1; i <= a; i += 2)
                 {
                     if (i % 2 != 0)
                     {
                         summ += i;
-
+                        Console.WriteLine(i);
                     }
+                }
+                while (n <= a)
+                {
+                    if (n % 2 != 0) 
+                    {
+                        summ += n;
+                        Console.WriteLime(n)
+                    }
+                    n += 2
                 }
             }
         }

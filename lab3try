@@ -57,7 +57,7 @@ namespace Lab3
                 int mark4 = int.Parse(Console.ReadLine());
                 if (mark4 == 2 || mark4 == 3) badmark = true;
 
-                if (!badmark) count++; 
+                if (!badmark) count++;
             }
             // end
 
@@ -70,7 +70,7 @@ namespace Lab3
             int taskTime = 10;
             int serias = 0;
 
-            while (time < 24)
+            while (time < 1440)
             {
                 if (tasks > 0)
                 {
@@ -81,7 +81,7 @@ namespace Lab3
                 else
                 {
                     seriasTime = Convert.ToInt32(Console.ReadLine());
-                    time += taskTime;
+                    time += seriasTime;
                     serias++;
                 }
             }
@@ -121,6 +121,12 @@ namespace Lab3
                     intellect += 5;
                     power -= 5;
                     break;
+
+                default:
+                    power += 0;
+                    intellect += 0;
+                    agility += 0;
+                    break;
             }
             if (power < 0) power = 0;
             if (intellect < 0) intellect = 0;
@@ -129,6 +135,6 @@ namespace Lab3
             // end
             return (power, agility, intellect);
         }
-        
+
     }
 }

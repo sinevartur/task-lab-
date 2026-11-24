@@ -197,3 +197,15 @@
         }
     }
 }
+
+//вывод матрицы 
+//int[,] answer1 = program.Task1(M);
+//Console.WriteLine(answer1);
+//for (int i = 0; i < answer1.GetLength(0); i++) 
+//{
+//    for (int j = 0; j < answer1.GetLength(1); j++) 
+//    {
+//        Console.Write($"{answer1[i, j],5}"); 
+//    }
+//    Console.WriteLine(); 
+//}
